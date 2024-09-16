@@ -1,0 +1,176 @@
+                                        /* Welcome  */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(146, 145, 145);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    margin: 40px;
+    border: 1px solid #00000054;
+}
+
+main {
+    margin:40px;
+    box-shadow: -2px 5px 14px 14px rgba(0, 0, 0, 0.525);
+}
+
+#grid_welcome {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,600px);
+}
+
+.box:nth-child(1) {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 30px;
+    /* text-align: justify; */
+}
+.box:nth-child(1) {
+    /* flex-direction: column; */
+    flex-direction: column;
+} h2 {
+    font-weight: bold;
+    font-size: 30px;
+} h1 {
+    font-weight: bold;
+    font-size: 40px;
+} h6 {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #f5b22f;
+    width: 38%;
+    border-radius: 10px;
+    padding: 5px;
+} span {
+    padding: 5px 10px 5px 10px;
+    background-color: #f5b22f;
+    width: 20%;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+} span:hover {
+    color: white;
+    transition: all ease 0.2s;
+} strong {
+    color: #f5b22f;
+}
+.box:nth-child(2) {
+    /* background-color: rgb(212, 218, 212); */
+    background-image: url('./Photos/portrait_1.avif');
+    /* background-image: url('./Photos/portrait_2.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: grayscale(100%); */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+} .welcome_list {
+    margin-right: 20px;
+    padding: 9px;
+    background-color: #f5b22f;
+    border-radius: 5%;
+} .welcome_list > li {
+    margin: 30px 0 30px 0;
+    cursor: pointer;
+} .welcome_list > li > a:hover {
+    transition: all ease 0.2s;
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+} .house {
+    color: white;
+}
+                                    /* Welcome finished */
+
+
+
+                                    /* About me */
+
+
+#about_me {
+    display: grid;
+    grid-template-columns: 245px 1fr;
+    grid-template-rows: repeat(1,600px);
+    margin: 40px;
+    box-shadow: -2px 5px 14px 14px rgba(0, 0, 0, 0.525);
+    background-color: #d4d4d4;
+    position: relative;
+}
+.img {
+    height: 230px;
+    background-image: url('./Photos/portrait_1.avif');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+} .about_me_list > ul  {
+    text-align: center;
+    padding-right: 25px;
+} .about_me_list > ul > li {
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin: 35px;
+} .about_me_list {
+    background-color: #f5b22f;
+} .user > a {
+    color: white;
+} .about_me_article {
+    text-align: center;
+    border: 1px solid #3f3f3f;
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    padding: 20px;
+    letter-spacing: 30px;
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(26, 25, 25);
+} .ul_about_me {
+    width: 83%;
+    margin: auto;
+    margin-top: 30px;
+} .ul_about_me > li:nth-child(1) {
+    font-size: 30px;
+} .ul_about_me > li:nth-child(2) {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 100;
+} .about_me_list > ul > li > a:hover {
+    color: rgb(255, 255, 255);
+} b {
+    color: #f87800;
+    text-decoration: underline;
+}
+
+ .about_me_skills_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+} .first_list {
+    display: flex;
+} .second_list {
+    display: flex;
+}
+                                    /* ABOUT ME finished */
+
+
+/* Resume  */
+
+/* Resume finsished */
