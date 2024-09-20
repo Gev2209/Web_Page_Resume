@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: #333333;
+}
+hr {
+    box-shadow: 9px 2px 2px black;
+}
+
+main * {
+    /* border: 1px solid rgba(0, 0, 0, 0.364); */
+    /* padding: 20px;
+    background:gold; */
+    /* text-align: left; */
+}
+h1 {
+    padding:0;
+    margin: 0;
+    text-align: center;
+    border: none;
+    font-size: 40px;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 100px 1fr 90px ;
+    grid-template-areas: 
+    'header header header'
+    'aside article nav'
+    'footer footer footer';
+}
+
+header {
+    grid-area: header;
+}
+article {
+    grid-area: article;
+}
+
+nav {
+    grid-area: nav;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+}
+/* /////////////////////////// */
+/* nav */
+nav {
+    /* background-color: #1E3A5F; */
+    position: fixed;
+    top: 14%;
+    right: -180px;
+    width: 160px;
+    margin-top: 28px;
+    border-radius:5px ;
+    /* height: 100%; */
+    background-color: #1E3A5F;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease;
+    color: #ffffff;
+    /* box-shadow: -5px 0px 8px rgba(255, 255, 255, 0.431); */
+    
+}
+nav:hover {
+    right: 0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+} nav ul li {
+    padding: 10px;
+} nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+    font-weight: 800;
+    font-size: 20px;
+} nav ul li a:hover {
+    color: rgb(254, 235, 90);
+}
+.blur {
+    color: black;
+    filter: blur(2px);
+    cursor: default;
+    pointer-events: none;
+} .blur:hover {
+    color: black;
+}
+/* Nav finished  */
+
+/* Aside */
+aside {
+    position: fixed;
+    top: 14%;
+    /* left: -260px; */
+    width: 240px;
+    height: 100%;
+    background-color: #2E7D32;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease;
+    color: #ffffff;
+    margin-top: 28px;
+    border-radius: 5px;
+}
+
+/* Стили для текста и заголовков */
+aside h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+aside p {
+    line-height: 1.5;
+}
+
+/* Aside finished */
+/* article */
+article {
+    background-color: #ffffff; /* Белый фон для основного контента */
+    padding: 20px; /* Внутренние отступы */
+    margin: 20px 0; /* Отступы сверху и снизу */
+    border-radius: 8px; /* Закругленные углы */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    margin-left: 90px; /* Отступ слева для предотвращения перекрытия */
+}
+
+article h2 {
+    font-size: 24px; /* Размер заголовка статьи */
+    margin-top: 0; /* Убираем отступ сверху */
+    color: #333; /* Цвет заголовка */
+}
+
+article p {
+    line-height: 1.6; /* Межстрочный интервал для читаемости */
+    color: #555; /* Цвет текста */
+}
+
+/* article finished */
+/*header  */
+header {
+    background-color: #4a90e2; /* Фоновый цвет */
+    color: #ffffff; /* Цвет текста */
+    padding: 20px; /* Внутренние отступы */
+    text-align: center; /* Выравнивание текста по центру */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень снизу */
+}
+
+header h1 {
+    font-size: 36px; /* Размер заголовка */
+    margin: 0; /* Убираем отступы */
+}
+/*header finished  */
+/* footer */
+footer {
+    background-color: #4a90e2; /* Фоновый цвет, такой же, как у header */
+    color: #ffffff; /* Цвет текста */
+    padding: 20px; /* Внутренние отступы */
+    text-align: center; /* Выравнивание текста по центру */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Тень сверху */
+    position: relative; /* Позволяет управлять положением */
+}
+
+footer p {
+    margin: 5px 0; /* Отступы между строками */
+}
+
+footer a {
+    color: #ffffff; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+/* footer finished */
