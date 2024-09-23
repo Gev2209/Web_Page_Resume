@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Document</title>
 </head>
 <body>
@@ -12,13 +19,31 @@
             <h1>PORTFOLIO</h1>
         </header>
         <aside>
-        <h2>Your Content Here</h2>
-        <p>Place your information here...</p>
+        <h2><i class="fa-brands fa-signal-messenger"></i> Write here</h2>
+        <form>
+            <label>
+                NAME PICTURE
+                <input class="name_pic" type="text" placeholder="Write...">
+            </label>
+            <input class="pic_file" type="file">    
+            <p class="btn">Add</p>
+            <hr class="aside_hr">
+            <p class="history_text">History</p>
+            <span class="history_text_content">
+                <ol class="histoy_list">
+                    <li class="histoy_list_li"></li>
+                    <li></li>
+                </ul>
+            </span>
+        </form>
         </aside>
-        <article>
-        <h2>Article Title</h2>
-        <p>This is a paragraph of the article. Here you can write your content, share your ideas, and express your thoughts.</p>
-        <p>Another paragraph can provide additional information or context about the topic discussed in this article.</p>
+        <article id="articles">
+            <div class="arrows">
+                <ul>
+                    <li><i class="fa-solid fa-arrow-left"></i></li>
+                    <li><i class="fa-solid fa-arrow-right"></i></li>
+                </ul>
+            </div>
         </article>
         <nav>
             <ul>
@@ -39,5 +64,7 @@
         </footer>
         
     </main>
+
+    <script src="./app.js"></script>
 </body>
 </html>
