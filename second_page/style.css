@@ -164,6 +164,8 @@ aside p {
     border-radius: 5px;
     font-size: 14px;
     padding: 5px 4px;
+    box-shadow:  2px 2px 6px #1e46ac92,
+             -2px -2px 6px #0e013355;
 }
 .histoy_list {
     padding: 5px;
@@ -201,6 +203,16 @@ label {
     color: white;
 }
 
+.fa-bars {
+    /* color: red; */
+    cursor: pointer;
+    font-size: 10px;
+    float: right;
+    padding-top: 4px;
+} .fa-bars:hover {
+    transform: rotate(45deg);
+    transition: all ease 1s;
+}
 /* Aside finished */
 /* article */
 article {

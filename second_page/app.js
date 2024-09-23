@@ -8,7 +8,6 @@ const btn_message = document.querySelector('.btn');
 const history_text = document.querySelector('.histoy_list_li');
 const text_contents = document.querySelector('.history_text_content');
 
-
 let count = 0;
 const list_texts = [];
 
@@ -34,14 +33,25 @@ const handle_picture_decrement = () => {
 
 const handle_btn_text = () => {
         const name = 'Gevorg';
-        list_texts.push(inputNamme.value);
         for (let i = 0; i < 1; i++) {
-        const elementUl = document.createElement('ul');
-        const elementLi = document.createElement('li');
-        console.log(elementUl,'>>>>elementUl');
-        elementLi.textContent = `${name}: ${inputNamme.value}`;
-        elementUl.appendChild(elementLi)
-        text_contents.appendChild(elementUl)
+            const elementUl = document.createElement('ul');
+            const elementLi = document.createElement('li');
+            const elementIcon = document.createElement('i');
+        
+        elementIcon.classList.add('fa-solid', 'fa-bars');
+        console.log(elementIcon, 'elementIcon');
+
+        // Устанавливаем текст для li
+        elementLi.textContent = `${name}: ${inputNamme.value} `; // Добавляем текст без иконки
+        elementLi.appendChild(elementIcon); // Добавляем иконку как дочерний элемент li
+
+        // Добавляем li в ul и ul в текстовый блок
+        elementUl.appendChild(elementLi);
+        text_contents.appendChild(elementUl);
+
+        // Сохраняем значение в массив
+        list_texts.push(inputNamme.value);
+        console.log(list_texts, 'list_texts');
         }
 }
 
