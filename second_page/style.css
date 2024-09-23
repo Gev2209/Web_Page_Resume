@@ -158,8 +158,12 @@ aside p {
     font-family: monospace;
     color: white;
 }
-.histoy_list_li {
+.history_text_content > ul > li {
     /* font-size: 18px; */
+    background-color: #4a91e2a9;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px 4px;
 }
 .histoy_list {
     padding: 5px;
