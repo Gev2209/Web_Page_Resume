@@ -237,16 +237,23 @@ label {
     color: white;
 }
 
-.fa-bars {
+.fa-pen-to-square {
     /* color: red; */
     cursor: pointer;
     font-size: 10px;
     float: right;
     padding-top: 4px;
-} .fa-bars:hover {
+} 
+.fa-trash {
+    cursor: pointer;
+    font-size: 10px;
+    float: right;
+    padding: 4px 7px;
+}
+/* .fa-bars:hover {
     transform: rotate(45deg);
     transition: all ease 1s;
-}
+} */
 /* Aside finished */
 /* article */
 article {

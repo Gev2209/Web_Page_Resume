@@ -8,7 +8,7 @@ const btn_message = document.querySelector('.btn');
 const history_text = document.querySelector('.histoy_list_li');
 const text_contents = document.querySelector('.history_text_content');
 const btnDelete = document.querySelector('.btn_delete');
-
+const fa_delete = document.querySelector('fa-pen-to-square');
 
 let count = 0;
 let list_texts = [];
@@ -39,32 +39,32 @@ const handle_btn_text = () => {
             const elementUl = document.createElement('ul');
             const elementLi = document.createElement('li');
             const elementIcon = document.createElement('i');
-        
-        elementIcon.classList.add('fa-solid', 'fa-bars');
+            const elementIconDelete = document.createElement('i');
+
+        elementIconDelete.classList.add('fa-solid', 'fa-trash');
+        elementIcon.classList.add('fa-solid', 'fa-pen-to-square');
             
         elementLi.textContent = `${name}: ${inputName.value} `;
+        elementLi.appendChild(elementIconDelete);
         elementLi.appendChild(elementIcon);
 
-        list_texts.push(elementUl.appendChild(elementLi).value);
-        console.log(list_texts,'adadaddsdads');
-        
-        
-        
-        
-        // text_contents.appendChild(elementUl);
-
+        list_texts.push(elementUl.appendChild(elementLi).value);        
+        /*delete li elements*/    
+        elementIconDelete.addEventListener('click',function () {
+            elementLi.remove();
+            console.log(elementLi,'elementtttt');
+            
+        })
         if (inputName.value.trim() === '') {
             return;
         } else {
             text_contents.appendChild(elementUl);
             list_texts.push(inputName.value.trim());
             
-        }
+            }
         }
         inputName.value = null;
-        return list_texts
-        // console.log(list_texts,'Add listttt');
-        
+        return list_texts        
 }
 inputName.addEventListener('keypress',function (event) {
     if (event.key === 'Enter') {
@@ -77,7 +77,7 @@ inputName.addEventListener('keypress',function (event) {
 
 const handle_btn_delet = () => {
     text_contents.innerHTML = ''
-
+    inputName.value = null;
     list_texts = [];
 }   
 
