@@ -190,10 +190,21 @@ aside p {
     margin-bottom: 10px;
     font-family: monospace;
     background-color: #4a91e266;
-    border: 1px solid rgba(255, 255, 255, 0.453);
     color: white;
     font-weight: 700;
+    outline: none;
+    border: none;
+    line-height: 1.15;
 }
+.name_pic:focus {
+    border-bottom: 3px solid #07a2ea;
+    border-radius: 4px 4px 2px 2px;
+  }
+  
+  .name_pic:hover {
+    outline: 1px solid lightgrey;
+    box-shadow: 4px 4px 3px 1px rgba(2, 64, 115, 0.6);
+  }
 label {
     padding: 2px;
     font-size: 16px;
