@@ -240,20 +240,34 @@ label {
 .fa-pen-to-square {
     /* color: red; */
     cursor: pointer;
-    font-size: 10px;
+    font-size: 12px;
     float: right;
-    padding-top: 4px;
-} 
+    padding-top: 2px;
+} .fa-pen-to-square:hover {
+    color: rgb(45, 241, 45);
+    transition: all ease 0.3s;
+    transform: translate(0,-5px);
+    font-size: 14px;
+}
 .fa-trash {
     cursor: pointer;
-    font-size: 10px;
+    font-size: 12px;
     float: right;
-    padding: 4px 7px;
+    padding: 2px 7px 2px 13px;
+} .fa-trash:hover {
+    color: #561204;
+    transition: all ease 0.8s;
+    transform: translate(0,-5px);
+    font-size: 14px;
 }
-/* .fa-bars:hover {
-    transform: rotate(45deg);
-    transition: all ease 1s;
-} */
+.edit_input {
+    border: none;
+    background: none;
+    color: white;
+    margin-top: 2px;
+    border: 1px solid #ffffff4c;
+}
+
 /* Aside finished */
 /* article */
 article {
