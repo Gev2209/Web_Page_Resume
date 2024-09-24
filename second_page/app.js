@@ -7,9 +7,11 @@ let inputName = document.querySelector('.name_pic');
 const btn_message = document.querySelector('.btn');
 const history_text = document.querySelector('.histoy_list_li');
 const text_contents = document.querySelector('.history_text_content');
+const btnDelete = document.querySelector('.btn_delete');
+
 
 let count = 0;
-const list_texts = [];
+let list_texts = [];
 const name = 'Gevorg';
 
 const counters = {
@@ -39,22 +41,30 @@ const handle_btn_text = () => {
             const elementIcon = document.createElement('i');
         
         elementIcon.classList.add('fa-solid', 'fa-bars');
-
+            
         elementLi.textContent = `${name}: ${inputName.value} `;
         elementLi.appendChild(elementIcon);
 
-        elementUl.appendChild(elementLi);
+        list_texts.push(elementUl.appendChild(elementLi).value);
+        console.log(list_texts,'adadaddsdads');
+        
+        
+        
+        
         // text_contents.appendChild(elementUl);
 
-        if (inputName.value === '') {
+        if (inputName.value.trim() === '') {
             return;
         } else {
             text_contents.appendChild(elementUl);
-            list_texts.push(inputName.value);
+            list_texts.push(inputName.value.trim());
             
         }
         }
-        inputName.value = null;     
+        inputName.value = null;
+        return list_texts
+        // console.log(list_texts,'Add listttt');
+        
 }
 inputName.addEventListener('keypress',function (event) {
     if (event.key === 'Enter') {
@@ -63,6 +73,15 @@ inputName.addEventListener('keypress',function (event) {
     }
 });
 
+
+
+const handle_btn_delet = () => {
+    text_contents.innerHTML = ''
+
+    list_texts = [];
+}   
+
+btnDelete.addEventListener('click',handle_btn_delet);
 
 btn_message.addEventListener('click',handle_btn_text);
 arrow_right.addEventListener('click',handle_picture_increment);

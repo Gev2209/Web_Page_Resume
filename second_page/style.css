@@ -146,9 +146,32 @@ aside p {
     cursor: pointer;
     box-shadow:  2px 2px 6px #d0f23b71,
              -2px -2px 6px #034c577c;
-    border: 1px solid rgba(255, 255, 255, 0.471);
+    border: 1px solid rgba(231, 213, 213, 0.471);
+    margin: 0;
 }
 
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn_delete {
+    background-color: #561204;
+    width: 40%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow:  2px 2px 6px #d0f23b71,
+             -2px -2px 6px #034c577c;
+    border: 1px solid rgba(255, 255, 255, 0.471);
+    margin: 0;
+} .btn_delete:hover {
+    box-shadow:  2px 2px 6px #f38484,
+             -2px -2px 6px #f90202;
+             transition: all ease 0.5s;
+}
 .aside_hr {
     box-shadow: none;
 }
@@ -177,8 +200,8 @@ aside p {
     font-size: 18px;
 }
 .btn:hover{
-    box-shadow:  2px 2px 6px #034c57,
-             -2px -2px 6px #d1f23b;
+    box-shadow:  2px 2px 6px #aaf3fe,
+             -2px -2px 6px #100046;
              transition: all ease 0.5s;
 }
 
